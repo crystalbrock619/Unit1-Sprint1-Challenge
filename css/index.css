@@ -162,6 +162,9 @@ header a{
     grid-column-start: 2;
     grid-row-start: 4;
 }
+.containerAboutBottom{
+    margin: 50px 20px;
+}
 
 .middle-content h2 {
     padding: 0 2%;
