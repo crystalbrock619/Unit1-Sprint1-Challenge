@@ -65,12 +65,23 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-
-.container {
-    width: 800px;
-    margin: 0 auto;
+/*BEGIN HEADER CSS*/
+header{
+    margin: 10px 360px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 20px;
 }
-
+header a{
+    align-self: flex-end;
+    color: black;
+    text-decoration: none;
+}
+#bottomHeadImg{
+    margin-top: 30px;  
+}
+/*BEGIN CSS MAIN*/
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -78,29 +89,25 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+    font-weight: 600;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 20px;  
 }
-
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -111,26 +118,118 @@ p {
     align-items: center;
     justify-content: center;
 }
-
+#box1 {
+    background-color: teal;
+}
+#box2 {
+    background-color: gold;
+}
+#box3 {
+    background-color: cadetblue;
+}
+#box4 {
+    background-color: coral;
+}
+#box5 {
+    background-color: crimson;
+}
+#box6 {
+    background-color: forestgreen;
+}
+#box7 {
+    background-color: darkorchid;
+}
+#box8 {
+    background-color: hotpink;
+}
+#box9 {
+    background-color: indigo;
+}
+#box10 {
+    background-color: dodgerblue;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
 .bottom-content .text-container {
     padding-right: 4%;
 }
-
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
 
+/*BEGIN CSS ABOUT*/
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.dashedBorder {
+    height:10px;
+    border-bottom: 1px dashed black;
+}
+.containerAboutTop {
+    margin: 10px 20px 10px;
+}
+.containerAboutMiddle {
+    display: grid;
+    grid-template-columns: repeat(2, 47.5%);
+    column-gap: 40px;
+    grid-template-rows: 63% 5% 15% 7%;
+    margin: 10px 20px -15px;
+}
+.button1, .button2 {
+    width: 100px;
+    height:30px;
+    line-height: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 20px 0px 20px;
+    border: 1px solid black;
+}
+.containerAboutMiddle .img1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-top: 20px;
+}
+.containerAboutMiddle .h4-1 {
+    grid-column-start: 1;
+    grid-row-start:2;
+}
+.containerAboutMiddle .p1 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+.containerAboutMiddle .button1 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+.containerAboutMiddle .img2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-top: 20px;
+}
+.containerAboutMiddle .h4-2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.containerAboutMiddle .p2 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+.containerAboutMiddle .button2 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+.containerAboutBottom {
+    margin: 50px 20px;
+}
+/*BEGIN FOOTER CSS*/
 footer {
     width: 100%;
     background: black;
 }
-
 footer nav {
     width: 60%;
     display: flex;
@@ -139,7 +238,6 @@ footer nav {
     padding: 20px 2%;
     font-size: 14px;
 }
-
 footer nav a {
     color: white;
     text-decoration: none;
