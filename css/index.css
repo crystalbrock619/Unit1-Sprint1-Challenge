@@ -95,6 +95,7 @@ header a{
     padding-bottom: 20px;
     font-weight: 600;  
 }
+
 .middle-content {
     margin-bottom: 20px;  
 }
@@ -116,6 +117,9 @@ header a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.boxes{
+    background:white;
 }
 .boxes:nth-child(1) {
     background-color: teal;
