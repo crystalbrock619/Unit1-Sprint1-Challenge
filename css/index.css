@@ -65,10 +65,16 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-
+#bottomHeadImg{
+    width: 53.5%;
+    margin: 20px 360px 10px;
+}
 .container {
     width: 800px;
     margin: 0 auto;
+}
+.containerAboutTop{
+    margin-top: 400px;
 }
 
 .top-content {
@@ -82,12 +88,60 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+    font-weight: 600;  
 }
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+.containerAboutMiddle {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 63% 5% 15% 7%;
+    margin-top: 20px;
+    border-bottom: dashed black 1px;
+}
+#button1, #button2{
+    width: 100px;
+    height:30px;
+    line-height: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 20px 0px 20px;
+}
+.containerAboutMiddle #img1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.containerAboutMiddle #h4-1 {
+    grid-column-start: 1;
+    grid-row-start:2;
+}
+.containerAboutMiddle #p1{
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+.containerAboutMiddle #button1{
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+.containerAboutMiddle #img2{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.containerAboutMiddle #h4-2{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+.containerAboutMiddle #p2{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+.containerAboutMiddle #button2{
+    grid-column-start: 3;
+    grid-row-start: 4;
 }
 
 .middle-content h2 {
@@ -100,47 +154,8 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.box1 {
-    background-color: teal;
-}
 
-.box2 {
-    background-color: gold;
-}
-
-.box3 {
-    background-color: cadetblue;
-}
-
-.box4 {
-    background-color: coral;
-}
-
-.box5 {
-    background-color: crimson;
-}
-
-.box6 {
-    background-color: forestgreen;
-}
-
-.box7 {
-    background-color: darkorchid;
-}
-
-.box8 {
-    background-color: hotpink;
-}
-
-.box9 {
-    background-color: indigo;
-}
-
-.box10 {
-    background-color: dodgerblue;
-}
-
-.middle-content .boxes .box {
+.middle-content .boxes .box{
     width: 12.5%;
     height: 100px;
     background: black;
@@ -149,7 +164,50 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
+
+.boxes:nth-child(1){
+    background-color: teal;
+}
+
+.box.boxes:nth-child(2){
+    background-color: gold;
+}
+
+.boxes:nth-child(3) {
+    background-color: cadetblue;
+}
+
+..boxes:nth-child(4) {
+    background-color: coral;
+}
+
+.boxes:nth-child(5) {
+    background-color: crimson;
+}
+
+.boxes:nth-child(6) {
+    background-color: forestgreen;
+}
+
+.boxes:nth-child(7) {
+    background-color: darkorchid;
+}
+
+..boxes:nth-child(8) {
+    background-color: hotpink;
+}
+
+..boxes:nth-child(9) {
+    background-color: indigo;
+}
+
+.boxes:nth-child(10) {
+    background-color: dodgerblue;
+}
+
+
 
 .bottom-content {
     display: flex;
