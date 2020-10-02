@@ -85,8 +85,12 @@ header a{
     margin: 0 auto;
 }
 
-.containerAboutTop, .containerAboutMiddle{
-    margin: 20px;
+.containerAboutTop{
+    margin: 10px 20px 10px;
+}
+.dashedBorder{
+    height:10px;
+    border-bottom: 1px dashed black;
 }
 
 .top-content {
@@ -106,14 +110,14 @@ header a{
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    
 }
 .containerAboutMiddle {
     display: grid;
-    grid-template-columns: 47.5% 5% 47.5%;
+    grid-template-columns: repeat(2, 47.5%);
+    column-gap: 40px;
     grid-template-rows: 63% 5% 15% 7%;
-    margin-top: 20px;
-    border-top: dashed black 1px;
+    margin: 10px 20px -15px;
 }
 .button1, .button2{
     width: 100px;
@@ -122,6 +126,7 @@ header a{
     padding: 10px;
     border-radius: 7px;
     margin: 20px 0px 20px;
+    border: 1px solid black;
 }
 .containerAboutMiddle .img1 {
     grid-column-start: 1;
@@ -141,20 +146,20 @@ header a{
     grid-row-start: 4;
 }
 .containerAboutMiddle .img2{
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-row-start: 1;
     margin-top: 20px;
 }
 .containerAboutMiddle .h4-2{
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-row-start: 2;
 }
 .containerAboutMiddle .p2{
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-row-start: 3;
 }
 .containerAboutMiddle .button2{
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-row-start: 4;
 }
 
